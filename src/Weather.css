@@ -1,6 +1,6 @@
 .Weather {
   border: 1px solid grey;
-  width: 600px;
+  max-width: 600px;
   margin: 70px auto 0 auto;
   background: #333;
   color: white;

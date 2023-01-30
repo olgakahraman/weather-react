@@ -2,7 +2,7 @@ import React from "react";
 import "./Weather.css";
 export default function Weather() {
   return (
-    <div className="Weather shadow  ps-4 bg-body-tertiary rounded">
+    <div className="Weather shadow  ps-4 pe-4 bg-body-tertiary rounded">
       <form className=" mt-4 mb-4">
         <div className="row">
           <div className="col-9">
@@ -13,7 +13,11 @@ export default function Weather() {
             />
           </div>
           <div className="col-3">
-            <input type="submit" value="Search" className="btn btn-primary" />
+            <input
+              type="submit"
+              value="Search"
+              className="btn btn-warning w-100"
+            />
           </div>
         </div>
       </form>
@@ -38,12 +42,11 @@ export default function Weather() {
         <div className="col-6 pt-4">
           <ul>
             <li>Details</li>
-            <li>Feels Like:    28℃</li>
-            <li>Humidity:      75%</li>
-            <li>Wind:          13 km/h</li>
+            <li>Feels Like: 28℃</li>
+            <li>Humidity: 75%</li>
+            <li>Wind: 13 km/h</li>
           </ul>
         </div>
-      
       </div>
     </div>
   );
