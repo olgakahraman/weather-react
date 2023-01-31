@@ -1,23 +1,23 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleReasponse(response) {
-    console.log(response.data);
+   
     setWeatherData({
       ready: true,
       temperature: response.data.temperature.current,
       feels_like: response.data.temperature.feels_like,
       humidity: response.data.temperature.humidity,
       wind: response.data.wind.speed,
+      date: new Date(response.data.time * 1000),
       city: response.data.city,
       country: response.data.country,
       description: response.data.condition.description,
-      iconUrl:
-        `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${weatherData.icon}.png`,
-      icon: response.data.condition.icon,
+      iconUrl: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`,
     });
   }
   if (weatherData.ready) {
@@ -41,19 +41,19 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <h1 className="city ">
-          {weatherData.city} 
-        </h1>
-<p>{weatherData.country}</p>
+        <h1 className="city ">{weatherData.city}</h1>
+        <p>{weatherData.country}</p>
         <div className="row">
           <div className="col-6">
             <ul>
-              <li>Wednesday 07:00</li>
+              <li>
+                <FormattedDate date={weatherData.date} />
+              </li>
               <li className="text-capitalize">{weatherData.description}</li>
             </ul>
           </div>
-          <div className="col-4 text-center">
-            <img src="{weatherData.iconUrl}" />
+          <div className="col-4 text-end">
+            <img src="{weatherData.iconUrl}" alt="description"/>
           </div>
         </div>
         <div className="row">
@@ -74,7 +74,7 @@ export default function Weather(props) {
     );
   } else {
     const apiKey = "30tacoed7baaf2f850e321e0334cf4ed";
-    let city = "London";
+
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleReasponse);
 
