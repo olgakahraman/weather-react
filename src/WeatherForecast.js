@@ -10,11 +10,48 @@ export default function WeatherForecast() {
           <div className="WeatherForecst-day">Thu</div>
           <WeatherIcon code="clear-sky-day" size={52} />
           <div className="WeatherForecast-temperatures">
-            <span className="WeatherForecast-temperature-max">19</span>° 
-            <span className="WeatherForecast-temperature-min">
-              10
-            </span>
-            °
+            <span className="WeatherForecast-temperature-max">19</span>°
+            <span className="WeatherForecast-temperature-min">10</span>°
+          </div>
+        </div>
+        <div className="col">
+          <div className="WeatherForecst-day">Thu</div>
+          <WeatherIcon code="clear-sky-day" size={52} />
+          <div className="WeatherForecast-temperatures">
+            <span className="WeatherForecast-temperature-max">19</span>°
+            <span className="WeatherForecast-temperature-min">10</span>°
+          </div>
+        </div>
+        <div className="col">
+          <div className="WeatherForecst-day">Thu</div>
+          <WeatherIcon code="clear-sky-day" size={52} />
+          <div className="WeatherForecast-temperatures">
+            <span className="WeatherForecast-temperature-max">19</span>°
+            <span className="WeatherForecast-temperature-min">10</span>°
+          </div>
+        </div>
+        <div className="col">
+          <div className="WeatherForecst-day">Thu</div>
+          <WeatherIcon code="clear-sky-day" size={52} />
+          <div className="WeatherForecast-temperatures">
+            <span className="WeatherForecast-temperature-max">19</span>°
+            <span className="WeatherForecast-temperature-min">10</span>°
+          </div>
+        </div>
+        <div className="col">
+          <div className="WeatherForecst-day">Thu</div>
+          <WeatherIcon code="clear-sky-day" size={52} />
+          <div className="WeatherForecast-temperatures">
+            <span className="WeatherForecast-temperature-max">19</span>°
+            <span className="WeatherForecast-temperature-min">10</span>°
+          </div>
+        </div>
+        <div className="col">
+          <div className="WeatherForecst-day">Thu</div>
+          <WeatherIcon code="clear-sky-day" size={52} />
+          <div className="WeatherForecast-temperatures">
+            <span className="WeatherForecast-temperature-max">19</span>°
+            <span className="WeatherForecast-temperature-min">10</span>°
           </div>
         </div>
       </div>
