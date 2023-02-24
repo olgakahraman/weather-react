@@ -11,10 +11,11 @@ function App() {
       </div>
       <footer className="text-center">
         Coded by Olga Dietiuk Kahraman and it is
-        <a href="https://github.com/olgakahraman/weather-react"
-         
+        <a
+          href="https://github.com/olgakahraman/weather-react"
           target="_blank"
-          rel="noopener noreferrer">
+          rel="noopener noreferrer"
+        >
           open-sourced on GitHub
         </a>
       </footer>
