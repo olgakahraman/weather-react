@@ -4,6 +4,7 @@
   margin: 70px auto 0 auto;
   background: #333;
   color: white;
+  border-radius: 10px;
 }
 .Weather h1{
    letter-spacing: 1px;
@@ -33,4 +34,8 @@
   position: relative;
   line-height: 1;
   top: -44px;
+}
+ a{
+  color:#F9CA33;
+  text-decoration: none;
 }
