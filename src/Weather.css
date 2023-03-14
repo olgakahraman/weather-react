@@ -2,40 +2,39 @@
   border: 1px solid grey;
   max-width: 600px;
   margin: 70px auto 0 auto;
-  background: #333;
+  background: #254a8d;
   color: white;
   border-radius: 10px;
 }
-.Weather h1{
-   letter-spacing: 1px;
-   margin:0;
+.Weather h1 {
+  letter-spacing: 1px;
+  margin: 0;
 }
 .Weather .temperature {
   font-size: 80px;
 }
 .Weather ul {
   list-style: none;
-  padding:0;
+  padding: 0;
   line-height: 19px;
   font-weight: 100;
   letter-spacing: 1px;
 }
-.bigIcon{
-  position:relative;
-  top:-80px;
+.bigIcon {
+  position: relative;
+  top: -80px;
 }
-.dateIcon{
-  height:80px;
+.dateIcon {
+  height: 80px;
 }
 .Weather .unit {
-  
   font-size: 16px;
   font-weight: 400;
   position: relative;
   line-height: 1;
   top: -44px;
 }
- a{
-  color:#F9CA33;
+a {
+  color: #254a8d;
   text-decoration: none;
 }
